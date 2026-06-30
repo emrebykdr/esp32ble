@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'core/app_colors.dart';
+import 'home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -44,14 +45,7 @@ class MyApp extends StatelessWidget {
           trackOutlineColor: WidgetStateProperty.all(Colors.transparent),
         ),
       ),
-      home: const Scaffold(
-        body: Center(
-          child: Text(
-            'ESP32 BLE',
-            style: TextStyle(color: AppColors.textPrimary),
-          ),
-        ),
-      ),
+      home: const HomeScreen(),
     );
   }
 }
